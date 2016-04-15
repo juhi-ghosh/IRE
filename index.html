@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Aspect Based Sentiment Analysis by juhi-ghosh</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Aspect Based Sentiment Analysis</h1>
+          <h2></h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/juhi-ghosh/IRE/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/juhi-ghosh/IRE/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/juhi-ghosh/IRE" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <p>We are concerned with the task of Aspect Based
+Sentiment Analysis (ABSA), where the goal is to identify the
+aspects of given target entities and the sentiment expressed
+towards each aspect in restaurant reviews. Also, we identify
+the categories of the aspect term and the category polarity for
+each review. Our approach is rule-based and we have come
+up with various heuristics to solve this non-trivial problem.
+When evaluated using SemEval-2014 dataset, we obtain decent
+results for aspect based sentiment analysis.</p>
+
+<h1>
+<a id="__present-day-scenarios" class="anchor" href="#__present-day-scenarios" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>__Present Day Scenarios...</h1>
+
+<p>In  recent  years,  the  explosion  of  social  networking  sites,
+blogs  and  review  sites  provide  a  lot  of  information.  Mil-
+lions  of  people  express  uninhibited  opinions  about  various
+product  features  and  their  nuances.  This  forms  an  active
+feedback which is of importance not only to the companies
+developing the products, but also to their rivals and several
+other potential customers. Sentiment Analysis is the task of
+tapping  this  goldmine  of  information.</p>
+
+<h1>
+<a id="__workarounds" class="anchor" href="#__workarounds" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>__Workarounds</h1>
+
+<p>The  sentiment  regarding  a  particular  product  in  a  review  is
+seldom explicitly positive or negative; rather people tend to have a 
+mixed opinion about various features, some positive and some negative.
+ Thus the feature specific opinion matters more than the overall opinion.</p>
+
+<p>Consider a review:
+__The food was good but servicing was a bit slow. 
+This sentence has a mixed emotion. The emotion regarding food is<br>
+positive whereas that regarding servicing life is negative.<br>
+Hence, it is of utmost importance to extract only those opinions 
+relevant to a particular feature (like food or service) and
+classify them, instead of taking the complete sentence and
+the overall sentiment. 
+We present a rule-based approach that exploits common-sense 
+knowledge and sentence dependency trees to detect both aspects, 
+their categories, similarity and polarity score.</p>
+
+<h1>
+<a id="__-brief-tour-of-the-project" class="anchor" href="#__-brief-tour-of-the-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>__ Brief Tour of the Project</h1>
+
+<p>** Aspect Term Extraction **
+<img src="https://github.com/juhi-ghosh/IRE/blob/master/ABSA_Web2py-App_Screenshots/ABSA_webapp1.png" alt="Image1">
+<img src="https://github.com/juhi-ghosh/IRE/blob/master/ABSA_Web2py-App_Screenshots/ABSA_webapp2.png" alt="Image2">
+<img src="https://github.com/juhi-ghosh/IRE/blob/master/ABSA_Web2py-App_Screenshots/ABSA_webapp3.png" alt="Image3"></p>
+
+<p>** Aspect Category Detection and Polarity Results **
+<img src="https://github.com/juhi-ghosh/IRE/blob/master/ABSA_Web2py-App_Screenshots/ABSA_webapp4.png" alt="Image4">
+<img src="https://github.com/juhi-ghosh/IRE/blob/master/ABSA_Web2py-App_Screenshots/ABSA_webapp5.png" alt="Image5"></p>
+
+<h1>
+<a id="__-conclusion" class="anchor" href="#__-conclusion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>__ Conclusion</h1>
+
+<p>In this project, we developed a system that extracts potential features
+from a review and clusters opinion expressions describing each of the
+features. Eventually, it retrieves the opinion expression describing 
+the user specified feature. The drawback of the system is that it cannot 
+evaluate domain dependent implicit sentiment as it does not train on any
+domain specific data. Thus the system will not be able to distinguish 
+between:
+The story is unpredictable(positive  sentiment) and
+The steering wheel is unpredictable(negative  sentiment).<br>
+This is due to the usage of a generic sentiment lexicon,
+in the final stage, in rule based classification. Supervised 
+classification can distinguish between the two sentiments but it
+needs tagged data and separate training for every domain.
+__This system can be further improved upon by:</p>
+
+<ul>
+<li>Discovering more rules for aspect term extraction.</li>
+<li>Combining existing rules for complex aspect extraction.</li>
+<li>To extract aspect categories dictionaries created can be
+made more noise free.</li>
+<li>Hybrid  approach  or  supervised  classification  can  be
+used for better performance.</li>
+</ul>
+        </section>
+
+        <footer>
+          Aspect Based Sentiment Analysis is maintained by <a href="https://github.com/juhi-ghosh">juhi-ghosh</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
